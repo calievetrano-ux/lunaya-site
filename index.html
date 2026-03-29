@@ -30,16 +30,19 @@
         <button class="bg-dark text-white px-8 py-3 rounded-full text-xs font-bold uppercase tracking-widest hover:scale-105 transition shadow-lg">Télécharger</button>
     </nav>
 
-    <header class="max-w-7xl mx-auto px-6 pt-20 pb-32 text-center">
+<header class="relative bg-cream pt-16 pb-32 overflow-hidden">
+    <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=1600&auto=format&fit=crop" 
+         class="absolute inset-0 w-full h-full object-cover opacity-10" alt="Ambiance douce Lunaya">
+    
+    <div class="max-w-7xl mx-auto px-6 text-center relative z-10 reveal">
         <span class="text-xs font-bold uppercase tracking-[0.3em] text-gray-400 mb-6 block">L'intelligence hormonale</span>
-        <h1 class="text-5xl md:text-7xl serif italic leading-tight mb-8">Naturelle. Confidentielle.<br>Épanouie.</h1>
-        <p class="max-w-2xl mx-auto text-gray-500 text-lg mb-12 font-light">L'application qui décode tes hormones pour une vie plus alignée sur ton cycle.</p>
-        <div class="flex justify-center space-x-4">
-            <div class="bg-black text-white px-6 py-3 rounded-xl flex items-center space-x-3 cursor-pointer">
-                <div class="text-xs text-left">Disponible sur <br><span class="text-lg font-bold">App Store</span></div>
-            </div>
+        <h1 class="text-5xl md:text-8xl serif italic leading-tight mb-8 text-dark">Naturelle.<br>Confidentielle.</h1>
+        <p class="max-w-xl mx-auto text-gray-500 text-lg mb-12 font-light italic">Votre boussole hormonale intelligente, conçue par une diététicienne spécialisée.</p>
+        <div class="flex justify-center">
+            <a href="#expert" class="bg-dark text-white px-10 py-4 rounded-full text-sm font-medium hover:bg-gray-800 transition shadow-lg">Me contacter</a>
         </div>
-    </header>
+    </div>
+</header>
 
     <section class="max-w-7xl mx-auto px-6 pb-32">
         <div class="grid md:grid-cols-3 gap-8">
@@ -132,25 +135,27 @@
             </div>
         </div>
     </footer>
-    <section id="modes" class="max-w-7xl mx-auto px-6 pb-32 reveal">
-    <div class="text-center mb-16">
-        <span class="text-[10px] font-bold uppercase tracking-widest text-gray-400">Personnalisé pour toi</span>
-        <h2 class="text-5xl serif italic mt-4">Les 4 Modes</h2>
-    </div>
-    <div class="grid md:grid-cols-2 gap-6">
-        <div class="h-[400px] rounded-[2.5rem] bg-stone-200 overflow-hidden relative group cursor-pointer">
-            <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=800" class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition duration-700">
-            <div class="absolute inset-0 bg-black/20 p-12 flex flex-col justify-between text-white">
-                <span class="text-xs font-bold tracking-widest uppercase">Mode 01</span>
-                <h4 class="text-4xl serif italic">Cycle Naturel</h4>
-            </div>
+<section id="piliers" class="max-w-7xl mx-auto px-6 pb-32 grid md:grid-cols-3 gap-8 scroll-mt-24 reveal">
+    <div class="relative luxury-card rounded-[2rem] h-[450px] overflow-hidden group shadow-sm hover:shadow-xl transition-all duration-500 cursor-pointer">
+        <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=800&auto=format&fit=crop" 
+             class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+        <div class="absolute inset-0 bg-peach/80 p-12 flex flex-col justify-between">
+            <h3 class="text-3xl serif text-dark">Nutrition <br>Fonctionnelle</h3>
+            <div class="bg-white/70 self-start px-4 py-1 rounded-full text-[10px] font-bold tracking-widest uppercase text-dark">EAT</div>
         </div>
-        <div class="h-[400px] rounded-[2.5rem] bg-[#e9f0e6] p-12 flex flex-col justify-between border border-gray-100">
-            <span class="text-xs font-bold tracking-widest uppercase text-gray-400">Mode 02</span>
-            <div>
-                <h4 class="text-4xl serif italic mb-4">Sous Contraception</h4>
-                <p class="text-gray-500 font-light italic">Soutien micronutritionnel et vitaminique adapté à ta pilule ou ton stérilet.</p>
-            </div>
+    </div>
+    <div class="relative luxury-card rounded-[2rem] h-[450px] overflow-hidden group shadow-sm hover:shadow-xl transition-all duration-500 cursor-pointer">
+        <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=800&auto=format&fit=crop" 
+             class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+        <div class="absolute inset-0 bg-sage/80 p-12 flex flex-col justify-between">
+            <h3 class="text-3xl serif text-dark">Mouvement <br>Doux</h3>
+            <div class="bg-white/70 self-start px-4 py-1 rounded-full text-[10px] font-bold tracking-widest uppercase text-dark">MOVE</div>
+        </div>
+    </div>
+    <div class="relative luxury-card rounded-[2rem] h-[450px] overflow-hidden group shadow-sm hover:shadow-xl transition-all duration-500 cursor-pointer">
+        <div class="absolute inset-0 bg-lavender p-12 flex flex-col justify-between">
+            <h3 class="text-3xl serif text-dark">Équilibre <br>Mental</h3>
+            <div class="bg-white/70 self-start px-4 py-1 rounded-full text-[10px] font-bold tracking-widest uppercase text-dark">DO</div>
         </div>
     </div>
 </section>
