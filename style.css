@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500&display=swap');
+
+:root {
+    --bg-cream: #fdfbf7;
+    --peach: #fceee9;
+    --sage: #e9f0e6;
+    --lavender: #f0edf5;
+    --dark: #1c1c1c;
+    --text: #2d3748;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-cream);
+    color: var(--text);
+    margin: 0;
+}
+
+.serif { font-family: 'Playfair Display', serif; }
+
+/* Animation d'apparition */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Style des cartes */
+.luxury-card {
+    transition: transform 0.3s ease, shadow 0.3s ease;
+}
+
+.luxury-card:hover {
+    transform: translateY(-10px);
+}
